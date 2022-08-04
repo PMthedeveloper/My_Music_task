@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.85eedbd1.css",
-    "main.js": "/react-gh-pages/static/js/main.43d71083.js",
-    "static/js/787.140f36fe.chunk.js": "/react-gh-pages/static/js/787.140f36fe.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.85eedbd1.css.map": "/react-gh-pages/static/css/main.85eedbd1.css.map",
-    "main.43d71083.js.map": "/react-gh-pages/static/js/main.43d71083.js.map",
-    "787.140f36fe.chunk.js.map": "/react-gh-pages/static/js/787.140f36fe.chunk.js.map"
+    "main.css": "/My_Music_task/static/css/main.85eedbd1.css",
+    "main.js": "/My_Music_task/static/js/main.e0ff38b9.js",
+    "static/js/787.140f36fe.chunk.js": "/My_Music_task/static/js/787.140f36fe.chunk.js",
+    "index.html": "/My_Music_task/index.html",
+    "main.85eedbd1.css.map": "/My_Music_task/static/css/main.85eedbd1.css.map",
+    "main.e0ff38b9.js.map": "/My_Music_task/static/js/main.e0ff38b9.js.map",
+    "787.140f36fe.chunk.js.map": "/My_Music_task/static/js/787.140f36fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.85eedbd1.css",
-    "static/js/main.43d71083.js"
+    "static/js/main.e0ff38b9.js"
   ]
 }
