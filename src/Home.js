@@ -5,9 +5,7 @@ const Home = () => {
   const [lname, setLname] = useState("");
   const [type, setType] = useState("Person");
   const [idn, setIdn] = useState("");
-  const [photo, setPhoto] = useState(
-    "https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-  );
+  const [photo, setPhoto] = useState("");
 
   const handlePhotoChange = (e) => {
     setPhoto(URL.createObjectURL(e.target.files[0]));
@@ -85,7 +83,7 @@ const Home = () => {
                     Type of person
                   </label>
                   <select
-                  required
+                    required
                     onChange={handleType}
                     id="types"
                     className="bg-gray-50 border border-gray-300 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-white-600 dark:placeholder-white-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -104,8 +102,8 @@ const Home = () => {
                     htmlFor="name"
                     className="leading-7 text-sm text-gray-600"
                   >
-                    Identification number ({type === "Person" ? "PESEL 11 digits" : "NIP 10 digits"}
-                    )
+                    Identification number (
+                    {type === "Person" ? "PESEL 11 digits" : "NIP 10 digits"})
                   </label>
                   <input
                     onChange={(e) => setIdn(e.target.value)}
@@ -135,7 +133,7 @@ const Home = () => {
                       id="file_input"
                       type="file"
                       onChange={handlePhotoChange}
-                      accept='.jpg, .jpeg'
+                      accept=".jpg, .jpeg"
                       required
                     />
                   </div>
@@ -143,12 +141,16 @@ const Home = () => {
               </div>
               <div className="p-2 w-1/2">
                 <div className="relative">
-                  <img
-                  style={{aspectRatio:1/1}}
-                    src={photo}
-                    alt="profilephoto"
-                    className="col-span-1 mt-4"
-                  />
+                  {photo === "" ? (
+                    ""
+                  ) : (
+                    <img
+                      style={{ aspectRatio: 1 / 1 }}
+                      src={photo}
+                      alt="profilephoto"
+                      className="col-span-1 mt-4"
+                    />
+                  )}
                 </div>
               </div>
               <div className="p-2 w-full mt-8">
